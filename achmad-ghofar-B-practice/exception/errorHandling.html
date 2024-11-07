@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error handling</title>
+</head>
+<body>
+    
+
+    <script>
+        try {
+            let num = 5 
+            num.toUpperCase()
+
+            } 
+        catch (error) {
+            console.log('An error occurred: '+ error.message)
+            throw new Error('There was an error processing your request.')
+        }
+
+    </script>
+</body>
+</html>

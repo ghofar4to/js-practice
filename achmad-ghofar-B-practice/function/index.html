@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi JavaScript</title>
+</head>
+<body>
+
+    <h2>Arrow Function</h2>
+    <input type="text" id="nameInput" placeholder="Masukkan nama">
+    <button onclick="greet()">Sapa</button>
+
+    <script>
+        // 1. Define Practice
+        // function printHeart() {
+        //     console.log("<3");
+        // }
+        // printHeart();
+
+
+        // 2. Return Value Practice
+        // function multiply(a, b) {
+        //     return a * b;
+        // }
+        // multiply(2,3);
+        // multiply(9,9);
+        // multiply(5,4);
+
+
+        // 3. Scope Practice
+        // function observe() {
+        //     let animal = "Pajama Squid";
+        //     console.log(animal); // Output: "Pajama Squid"
+        // }
+        // observe();
+
+        // let deadlyAnimal = "Blue-Ringed Octopus";
+        // function handleAnimal() {
+        //     let deadlyAnimal = "Scorpionfish";
+        //     console.log(deadlyAnimal);
+        // }
+        // handleAnimal();
+        // console.log(deadlyAnimal)
+
+        // 4. Arrow Function Exercise
+        const sayHello = (name) => {
+            return `Hello ${name}!`;
+        };
+
+        function greet() {
+            const name = document.getElementById('nameInput').value;
+            alert(sayHello(name));
+        }
+    </script>
+</body>
+</html>
